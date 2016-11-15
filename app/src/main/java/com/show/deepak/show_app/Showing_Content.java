@@ -32,7 +32,9 @@ public class Showing_Content extends AppCompatActivity {
         setContentView(R.layout.activity_showing__content);
         tv2 = (TextView)findViewById(R.id.show_data);
         if( savedInstanceState!=null ) {
-            String gg = savedInstanceState.getString( i1 );
+//            String gg = savedInstanceState.getString( i1 );
+//            tv2.setText(gg);
+            String gg = getIntent().getExtras().getString("TAGG");
             tv2.setText(gg);
         }
         else {
